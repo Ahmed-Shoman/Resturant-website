@@ -14,7 +14,7 @@ class MenuController extends Controller
 {
     public function index()
     {
-        $menus = Menu::all(); // استخدم التسمية الصحيحة للنموذج
+        $menus = Menu::all(); 
         return view('admin.menus.index', compact('menus'));
     }
 
@@ -51,7 +51,7 @@ class MenuController extends Controller
    public function edit($id)
 {
      $menu = Menu::findOrFail($id);
-    $categories = Category::all(); // جلب جميع الفئات
+    $categories = Category::all(); 
     return view('admin.menus.edit', compact('menu', 'categories'));
 }
 
