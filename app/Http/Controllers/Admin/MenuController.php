@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\MenuStoreRequest;
 use App\Models\Category;
-use App\Models\Menu; // استخدم التسمية الصحيحة للنموذج
+use App\Models\Menu; 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
